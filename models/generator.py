@@ -6,7 +6,7 @@ def load_generation_model(model_name="gpt2"):
     model = AutoModelForCausalLM.from_pretrained(model_name)
     return model, tokenizer
 
-def generate_text(prompt, model, tokenizer, max_length=100):
+def generate_text(prompt, model, tokenizer, max_length=1024):
     """Generate text based on a prompt."""
     inputs = tokenizer(prompt, return_tensors="pt")
     outputs = model.generate(

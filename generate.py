@@ -11,9 +11,15 @@ def main():
     gen_model, tokenizer = load_generation_model("gpt2")
 
     # Step 3: User Query
-    query = "Explain modular programming."
+
+    while True:
+        query=input("Ask me: ")
+        if query !="":
+            break
+
+    # query = "Explain modular programming."
     top_contexts = retrieve_context(query, contexts, embeddings, embedding_model)
-    print(f"Retrieved Context: {top_contexts[0]}")
+    # print(f"Retrieved Context: {top_contexts[0]}")
 
     # Step 4: Generate Text
     prompt = f"Based on the following context: {top_contexts[0]}\nAnswer: "
