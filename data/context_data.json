@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "text": "Modular programming is a design approach where a program is divided into independent, interchangeable modules."
+    },
+    {
+        "id": 2,
+        "text": "Python is a popular programming language known for its simplicity and readability."
+    },
+    {
+        "id": 3,
+        "text": "Deep learning is a subset of machine learning that uses neural networks with many layers to analyze patterns in data."
+    }
+]
