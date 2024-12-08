@@ -7,6 +7,7 @@ listOfFiles=[
     f"models/retriever.py",
     f"models/generator.py ",
     f"utils/embedding_utils.py",
+    f"templates/index.html",
     "config.py",
     "generate.py",
     "requirements.txt"
